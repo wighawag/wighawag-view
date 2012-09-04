@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project>
+	<yoga-version>1</yoga-version>
+	<compiler-version>2.10</compiler-version>
+	
+	<id>com.wighawag.view</id>
+	<version>0.0.1</version>
+
+	<main>Main</main>
+	
+	<sources>
+		<source path="src" />
+	</sources>
+	
+	<tests framework="munit" path="test" />
+	
+	<targets hxml="compile">
+		
+		<target name="swf" >
+			<param line="-swf-version 11" />
+		</target>
+		
+		<target name="cpp" />
+
+		<target name="js" />		
+
+	</targets>
+	
+	
+	<config-file template="hxproj.template" output="project_flash.hxproj" />
+	<config-file template="nmml.template" output="project.nmml" />
+
+	<dependencies>
+		<haxelib name="msignal" version="1.0.0" />
+		<haxelib name="mconsole" />
+        <haxelib name="flambe" version="1.2" />
+
+        	<repository id="com.wighawag.report.Report" version="0.0.1" />
+		
+		<repository id="com.wighawag.components-core" version="0.0.1" />
+	        <!--<repository id="com.wighawag.flambe" version="0.0.1" /> -->
+	</dependencies>
+</project>
