@@ -1,6 +1,6 @@
 package com.wighawag.view;
 
-import com.wighawag.core.PositionComponent;
+import com.wighawag.core.PlacementComponent;
 import flambe.display.Texture;
 import flambe.platform.flash.FlashTexture;
 import com.wighawag.system.Entity;
@@ -9,7 +9,7 @@ import flambe.display.DrawingContext;
 class SimpleEntityView implements EntityView{
 
     @owner
-    private var positionComponent : PositionComponent;
+    private var placementComponent : PlacementComponent;
 
     @owner
     private var graphicsComponent : GraphicsComponent;
@@ -20,7 +20,18 @@ class SimpleEntityView implements EntityView{
     }
 
     public function draw(context:DrawingContext):Void {
-        context.drawImage(texture,positionComponent.x,positionComponent.y);
+        var totalWidth = 0;
+        var totalHeight = 0;
+        var maxWidth = placementComponent.width;
+        var maxHeight = placementComponent.height;
+        while(totalHeight < maxHeight){
+            totalWidth = 0;
+            while(totalWidth < maxWidth){
+                context.drawImage(texture,placementComponent.x + totalWidth, placementComponent.y + totalHeight);
+                totalWidth += texture.width;
+            }
+            totalHeight += texture.height   ;
+        }
     }
 
     public function match():Bool {
