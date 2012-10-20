@@ -1,10 +1,11 @@
 package com.wighawag.view.flambe;
 import com.wighawag.system.Entity;
-class SimpleEntityViewFactory implements EntityViewFactory{
+import flambe.display.DrawingContext;
+class SimpleEntityViewFactory implements EntityViewFactory<DrawingContext>{
     public function new() {
     }
 
-    public function get(entity:Entity):EntityView {
+    public function get(entity:Entity):EntityView<DrawingContext> {
         var view = new SimpleEntityView();
         var accessClass = view.attach(entity);
         if (accessClass != null){

@@ -5,8 +5,9 @@ import flambe.display.Texture;
 import flambe.platform.flash.FlashTexture;
 import com.wighawag.system.Entity;
 import flambe.display.DrawingContext;
+import com.wighawag.view.EntityView;
 
-class SimpleEntityView implements EntityView{
+class SimpleEntityView implements EntityView<DrawingContext>{
 
     @owner
     private var placementComponent : PlacementComponent;

@@ -4,26 +4,22 @@ import com.wighawag.core.PositionComponent;
 import com.fermmtools.utils.ObjectHash;
 import com.wighawag.system.Model;
 import com.wighawag.system.Updatable;
-import flambe.platform.Renderer;
 import com.wighawag.system.Entity;
 import com.wighawag.system.SystemComponent;
 
-class View implements Updatable{
+class View<DrawingContextType> implements Updatable{
 
-    private var renderer : Renderer;
-    private var entityViewFactory : EntityViewFactory;
+    private var renderer : Renderer<DrawingContextType>;
+    private var entityViewFactory : EntityViewFactory<DrawingContextType>;
     private var model : Model;
 
-    private var backgroundComponent : BackgroundComponent;
+    private var entitiesViews : ObjectHash<Entity,EntityView<DrawingContextType>>;
 
-    private var entitiesViews : ObjectHash<Entity,EntityView>;
-
-    public function new(model : Model, renderer : Renderer, entityViewFactory : EntityViewFactory) {
+    public function new(model : Model, renderer : Renderer<DrawingContextType>, entityViewFactory : EntityViewFactory<DrawingContextType>) {
         entitiesViews = new ObjectHash();
         this.entityViewFactory = entityViewFactory;
         this.renderer = renderer;
         this.model = model;
-        backgroundComponent = model.get(BackgroundComponent);
         model.onEntityAdded.add(onEntityAdded);
         model.onEntityRemoved.add(onEntityRemoved);
         for(entity in model.entities){
@@ -45,18 +41,13 @@ class View implements Updatable{
 
     public function update(dt:Float):Void {
 
-        var context = renderer.willRender();
-        context.save();
-        if (backgroundComponent != null){
-            backgroundComponent.draw(context);
-        }
+        var context = renderer.lock();
+
         for (entity in entitiesViews){
             entitiesViews.get(entity).draw(context);
         }
-        context.restore();
-        renderer.didRender();
 
+        renderer.unlock();
     }
-
 
 }
