@@ -1,4 +1,4 @@
-package com.wighawag.view;
+package com.wighawag.view.flambe;
 import com.wighawag.system.Entity;
 class SimpleEntityViewFactory implements EntityViewFactory{
     public function new() {

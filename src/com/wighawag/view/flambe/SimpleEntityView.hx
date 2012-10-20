@@ -1,4 +1,4 @@
-package com.wighawag.view;
+package com.wighawag.view.flambe;
 
 import com.wighawag.core.PlacementComponent;
 import flambe.display.Texture;
