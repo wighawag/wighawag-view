@@ -1,4 +1,6 @@
 package com.wighawag.view.flambe;
+import com.wighawag.view.EntityView;
+import com.wighawag.view.EntityViewFactory;
 import com.wighawag.system.Entity;
 import flambe.display.DrawingContext;
 class SimpleEntityViewFactory implements EntityViewFactory<DrawingContext>{
