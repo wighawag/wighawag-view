@@ -9,5 +9,9 @@ class GraphicsComponent implements EntityComponent{
         this.bitmapData = bitmapData;
     }
 
+    public function initialise():Void{
+
+    }
+
     public var bitmapData(default, null) : BitmapData;
 }

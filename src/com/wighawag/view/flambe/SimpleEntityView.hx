@@ -20,6 +20,10 @@ class SimpleEntityView implements EntityView<DrawingContext>{
     public function new() {
     }
 
+    public function initialise():Void{
+
+    }
+
     public function draw(context:DrawingContext):Void {
         var totalWidth = 0;
         var totalHeight = 0;

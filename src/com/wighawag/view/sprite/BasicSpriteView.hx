@@ -19,6 +19,10 @@ class BasicSpriteView implements EntityView<SpriteDrawingContext>{
     public function new() {
     }
 
+    public function initialise():Void{
+
+    }
+
     public function draw(context:SpriteDrawingContext):Void {
 
         if (assetComponent.fillHorizontally || assetComponent.fillVertically){
