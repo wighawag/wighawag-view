@@ -19,10 +19,10 @@
 		<target name="swf" >
 			<param line="-swf-version 11" />
 		</target>
-		
+
 		<target name="cpp" />
 
-		<target name="js" />		
+		<target name="js" />
 
 	</targets>
 	
@@ -33,12 +33,10 @@
 	<dependencies>
 		<haxelib name="msignal" version="1.0.0" />
 		<haxelib name="mconsole" />
-        <!-- <haxelib name="flambe" version="1.2" /> -->
-        <repository id="com.wighawag.flambe" version="0.0.1" />
-
-        	<repository id="com.wighawag.report.Report" version="0.0.1" />
-		
+        <haxelib name="flambe" version="1.2" />
+        <!--<repository id="com.wighawag.flambe" version="0.0.1" />-->
+        <repository id="com.wighawag.report.Report" version="0.0.1" />
 		<repository id="com.wighawag.components-core" version="0.0.1" />
-	        <!--<repository id="com.wighawag.flambe" version="0.0.1" /> -->
+        <repository id="com.wighawag.asset" version="0.0.1" />
 	</dependencies>
 </project>
