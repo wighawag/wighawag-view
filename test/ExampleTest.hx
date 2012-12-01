@@ -1,6 +1,8 @@
 package;
 
 import com.wighawag.view.sprite.BasicSpriteViewFactory;
+import com.wighawag.asset.spritesheet.Sprite;
+import com.wighawag.asset.load.Batch;
 import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
@@ -16,7 +18,7 @@ class ExampleTest
 	
 	public function new() 
 	{
-	    new BasicSpriteViewFactory();
+	    new BasicSpriteViewFactory(new Batch<Sprite>([]));
 	}
 	
 	@BeforeClass
