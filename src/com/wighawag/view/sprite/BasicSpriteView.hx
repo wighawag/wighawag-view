@@ -31,7 +31,19 @@ class BasicSpriteView implements EntityView<NMEDrawingContext>{
 
     public function draw(context:NMEDrawingContext):Void {
         var sprite = sprites.get(assetComponent.assetId);
-        sprite.draw(context, stateComponent.state, stateComponent.elapsedTime, Std.int(placementComponent.x), Std.int(placementComponent.y), Std.int(placementComponent.width), Std.int(placementComponent.height), SpriteDraw.Scale);
+        var drawMode : SpriteDraw = SpriteDraw.NoScale;
+        if (assetComponent.scale){
+            drawMode = SpriteDraw.Scale;
+        }else{
+            if (assetComponent.fillVertically && assetComponent.fillVertically){
+                drawMode = SpriteDraw.FillAll;
+            }else if (assetComponent.fillVertically){
+                drawMode = SpriteDraw.FillVertically;
+            }else if (assetComponent.fillHorizontally){
+                drawMode = SpriteDraw.FillHorizontally;
+            }
+        }
+        sprite.draw(context, stateComponent.state, stateComponent.elapsedTime, Std.int(placementComponent.x), Std.int(placementComponent.y), Std.int(placementComponent.width), Std.int(placementComponent.height), drawMode);
     }
 
 
