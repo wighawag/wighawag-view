@@ -33,7 +33,7 @@ class BasicSpriteView implements EntityView<NMEDrawingContext>{
         var sprite = sprites.get(assetComponent.assetId);
         if (assetComponent.scale){
             sprite.drawScaled(context, stateComponent.state, stateComponent.elapsedTime, Std.int(placementComponent.x), Std.int(placementComponent.y), Std.int(placementComponent.width), Std.int(placementComponent.height));
-        }else if (assetComponent.fillVertically && assetComponent.fillVertically){
+        }else if (assetComponent.fillVertically && assetComponent.fillHorizontally){
             sprite.fill(context, stateComponent.state, stateComponent.elapsedTime, Std.int(placementComponent.x), Std.int(placementComponent.y), Std.int(placementComponent.width), Std.int(placementComponent.height));
         }else if (assetComponent.fillHorizontally){
             sprite.fillHorizontally(context, stateComponent.state, stateComponent.elapsedTime, Std.int(placementComponent.x), Std.int(placementComponent.y), Std.int(placementComponent.width));
