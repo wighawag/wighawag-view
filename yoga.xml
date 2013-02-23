@@ -4,7 +4,8 @@
 	<compiler-version>2.10</compiler-version>
 	
 	<id>com.wighawag.view</id>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>0.1.1</version>
+	<prepared>2013-02-23 21:04:20</prepared>
 
 	<main>Main</main>
 	
@@ -32,8 +33,8 @@
 
 	<dependencies>
 		<haxelib name="msignal" version="1.0.0" />
-		<repository id="com.wighawag.report.Report" version="0.1.1-SNAPSHOT" />
-		<repository id="com.wighawag.components-core" version="0.1.1-SNAPSHOT" />
-        <repository id="com.wighawag.asset" version="0.1.1-SNAPSHOT" />
+		<repository id="com.wighawag.report.Report" version="0.1.1" />
+		<repository id="com.wighawag.components-core" version="0.1.1" />
+        <repository id="com.wighawag.asset" version="0.1.1" />
 	</dependencies>
 </project>
