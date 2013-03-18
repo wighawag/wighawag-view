@@ -39,5 +39,13 @@ class BasicViewLayer<DrawingContextType> implements ViewLayer<DrawingContextType
         }
     }
 
+    public function dispose() : Void{
+        model.onEntityAdded.remove(onEntityAdded);
+        model.onEntityRemoved.remove(onEntityRemoved);
+
+        entityViewFactory = null;
+        model = null;
+        entitiesViews = null;
+    }
 
 }

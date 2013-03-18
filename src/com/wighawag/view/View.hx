@@ -24,4 +24,10 @@ class View<DrawingContextType, TextureType> implements Updatable{
         renderer.unlock();
     }
 
+    public function dispose() : Void{
+        for(layer in viewLayers){
+            layer.dispose();
+        }
+    }
+
 }
