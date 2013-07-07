@@ -1,6 +1,14 @@
-package com.wighawag.view;
-import com.wighawag.asset.renderer.Renderer;
-import com.wighawag.system.Updatable;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.view;
+import wighawag.asset.renderer.Renderer;
+import wighawag.system.Updatable;
 
 class View<DrawingContextType, TextureType> implements Updatable{
 

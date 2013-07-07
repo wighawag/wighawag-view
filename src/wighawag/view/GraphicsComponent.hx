@@ -1,6 +1,14 @@
-package com.wighawag.view;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
 
-import com.wighawag.system.EntityComponent;
+package wighawag.view;
+
+import wighawag.system.EntityComponent;
 import flash.display.BitmapData;
 
 class GraphicsComponent implements EntityComponent{

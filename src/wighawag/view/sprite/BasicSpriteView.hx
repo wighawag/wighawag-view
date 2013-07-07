@@ -1,12 +1,20 @@
-package com.wighawag.view.sprite;
-import com.wighawag.core.PlacementComponent;
-import com.wighawag.asset.renderer.NMEDrawingContext;
-import com.wighawag.asset.spritesheet.Sprite;
-using com.wighawag.asset.spritesheet.SpriteUtils;
-import com.wighawag.asset.load.Batch;
-import com.wighawag.view.EntityView;
-import com.wighawag.core.StateComponent;
-import com.wighawag.core.AssetComponent;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.view.sprite;
+import wighawag.core.PlacementComponent;
+import wighawag.asset.renderer.NMEDrawingContext;
+import wighawag.asset.spritesheet.Sprite;
+using wighawag.asset.spritesheet.SpriteUtils;
+import wighawag.asset.load.Batch;
+import wighawag.view.EntityView;
+import wighawag.core.StateComponent;
+import wighawag.core.AssetComponent;
 class BasicSpriteView implements EntityView<NMEDrawingContext>{
 
 

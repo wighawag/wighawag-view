@@ -1,0 +1,13 @@
+{
+  "name": "wighawag-view",
+  "url" : "https://github.wighawag/wighawag-view/",
+  "license": "Wighawag",
+  "tags": ["cross"],
+  "description": "",
+  "version": "0.0.1",
+  "releasenote": "",
+  "contributors": ["wighawag"],
+  "dependencies": {"wighawag-report":"", "wighawag-components-core":"", "wighawag-asset":"", "wighawag-system":"", "wighawag-utils":""},
+  "classPath":"src",
+  "targets":["as3"]
+}

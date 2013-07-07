@@ -1,8 +1,16 @@
-package com.wighawag.view;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.view;
 
 import com.fermmtools.utils.ObjectHash;
-import com.wighawag.system.Model;
-import com.wighawag.system.Entity;
+import wighawag.system.Model;
+import wighawag.system.Entity;
 
 class BasicViewLayer<DrawingContextType> implements ViewLayer<DrawingContextType> {
 

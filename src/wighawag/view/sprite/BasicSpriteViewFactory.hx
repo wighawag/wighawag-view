@@ -1,10 +1,18 @@
-package com.wighawag.view.sprite;
-import com.wighawag.system.Entity;
-import com.wighawag.view.EntityView;
-import com.wighawag.view.EntityViewFactory;
-import com.wighawag.asset.spritesheet.Sprite;
-import com.wighawag.asset.renderer.NMEDrawingContext;
-import com.wighawag.asset.load.Batch;
+/****
+* Wighawag License:
+* - free to use for commercial and non commercial application
+* - provided the modification done to it are given back to the community
+* - use at your own risk
+* 
+****/
+
+package wighawag.view.sprite;
+import wighawag.system.Entity;
+import wighawag.view.EntityView;
+import wighawag.view.EntityViewFactory;
+import wighawag.asset.spritesheet.Sprite;
+import wighawag.asset.renderer.NMEDrawingContext;
+import wighawag.asset.load.Batch;
 
 class BasicSpriteViewFactory  implements EntityViewFactory<NMEDrawingContext>{
 

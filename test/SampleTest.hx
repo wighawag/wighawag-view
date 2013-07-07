@@ -1,11 +1,11 @@
 package;
 
-import com.wighawag.view.View;
-import com.wighawag.view.BasicViewLayer;
-import com.wighawag.view.sprite.BasicSpriteViewFactory;
-import com.wighawag.asset.spritesheet.Sprite;
-import com.wighawag.asset.load.Batch;
-import com.wighawag.system.Model;
+import wighawag.view.View;
+import wighawag.view.BasicViewLayer;
+import wighawag.view.sprite.BasicSpriteViewFactory;
+import wighawag.asset.spritesheet.Sprite;
+import wighawag.asset.load.Batch;
+import wighawag.system.Model;
 import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
@@ -15,7 +15,7 @@ import massive.munit.async.AsyncFactory;
 * This is an example test class can be used as a template for writing normal and async tests 
 * Refer to munit command line tool for more information (haxelib run munit)
 */
-class ExampleTest 
+class SampleTest 
 {
 	private var timer:Timer;
 	
