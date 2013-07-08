@@ -1,13 +1,13 @@
 {
   "name": "wighawag-view",
   "url" : "https://github.wighawag/wighawag-view/",
-  "license": "Wighawag",
+  "license": "GPL",
   "tags": ["cross"],
-  "description": "",
+  "description": "Entity views",
   "version": "0.0.1",
   "releasenote": "",
   "contributors": ["wighawag"],
-  "dependencies": {"wighawag-report":"", "wighawag-components-core":"", "wighawag-asset":"", "wighawag-system":"", "wighawag-utils":""},
+  "dependencies": {"wighawag-report":"0.0.1", "wighawag-components-core":"0.0.1", "wighawag-asset":"0.0.1", "wighawag-system":"0.0.1", "wighawag-utils":"0.0.1"},
   "classPath":"src",
   "targets":["as3"]
 }
