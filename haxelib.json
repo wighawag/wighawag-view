@@ -4,10 +4,10 @@
   "license": "GPL",
   "tags": ["cross"],
   "description": "Entity views",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "releasenote": "",
   "contributors": ["wighawag"],
-  "dependencies": {"wighawag-report":"0.0.1", "wighawag-components-core":"0.0.1", "wighawag-asset":"0.0.1", "wighawag-system":"0.0.1", "wighawag-utils":"0.0.1"},
+  "dependencies": {"wighawag-report":"0.0.1", "wighawag-components-core":"0.0.2", "wighawag-asset":"0.0.1", "wighawag-utils":"0.0.1"},
   "classPath":"src",
   "targets":["as3"]
 }
